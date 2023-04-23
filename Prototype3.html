@@ -1,0 +1,111 @@
+<!--
+    Student Name: Rohan Shrestha
+    Univeristy ID: 2059641
+    Prototype 3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Weather App</title>
+        <!-- linking external CSS file -->
+        <link rel="stylesheet" href="./styles/2059641_style.css">
+        <!-- linking google fonts to be used in the weather app -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- linking Weather app logo image -->
+        <link rel="icon" href="./Logo.png">
+    </head>
+    <body>
+        <header>
+            <!-- Logo -->
+            <img src="./Logo.png" alt="Weather App Logo">
+            <!-- navigation bar -->
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Updates</li>
+                </ul>
+            </div>
+        </header>
+        <!--aligning texts in center-->
+        <div class="heading">
+            <!--id attribute with value location(to show city name)-->
+            <h1>Weather in <span id="location">Please wait for a while...</span></h1>
+            <!--image tag to show weather icon (id attribute with value 'weather-icon')-->
+            <!-- <img src="" alt="Weather Icon Image" srcset="" id="weatherIcon"> -->
+        </div>
+        <div>
+        <div class = "container">
+            
+            <div class="grid1">
+                <strong>Real Feel: </strong>
+                <span class="feel">Please wait for a moment...</span>
+            </div>
+            
+            <div class="grid2">
+                <strong>Description: </strong>
+                <!--weather description-->
+                <span class="desc">Please wait for a moment...</span>
+            </div>
+            
+            <div class="weather grid3">
+                    <!--to show temperature(class attribute with value c and f)-->
+                    <img src="./icons/Temperature.png" alt="Temp icon">
+                    <strong>Temperature: </strong>
+                    <!-- span tag for inline text only-->
+                    <span class="c">Please wait for a moment...</span> <b>/</b>
+                    <span class="f">Please wait for a moment...</span>
+            </div>          
+            
+            <div class="grid4">
+                <!--to show humidity(class attribute with value humidity)-->
+                <img src="./icons/Humidity.png" alt="Humidity icon">
+                <strong>Humidity:</strong>
+                <!-- span tag for inline text only-->
+                <span class="humidity">Please wait...</span>
+            </div>
+            
+            <div class="grid5">
+                <!-- to show pressure info in the webpage(class attribute with value pressure)-->
+                <img src="./icons/Pressure.png" alt="Pressure icon">
+                <strong>Pressure:</strong>
+                <span class="pressure">Please wait...</span>
+            </div>
+            
+            <div class="grid6">
+                <!--to show wind spped (class attribute with value wind)-->
+                <img src="./icons/Wind.png" alt="Wind icon">
+                <strong>Wind Speed:</strong>
+                <span class="wind">Please wait...</span>
+            </div>
+            
+            <div class="grid7">
+                <!-- to show sunrise and sunset time(Nepal time),(class atrributes with value sunrise and sunset)-->
+                <img src="./icons/Sunrise.png" alt="Rise icon">
+                <strong>Sunrise:</strong> <span class="sunrise">Please wait...</span>
+            </div>
+
+            <div class="grid8"> 
+                <img src="./icons/Sunset.png" alt="Set icon">
+                <strong>Sunset:</strong> <span class="sunset">Please wait...</span>
+            </div>
+            
+            <div class="grid9">
+                <p id="myLastUpdated">Please wait...</p>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            &copy; 2021 Rohan Shrestha. All Rights Reserved. 
+        </footer>
+        <script type = "text/javascript" src = "./Prototype3.js"></script>
+    </body>
+</html>
