@@ -1,0 +1,189 @@
+/*
+    Name: Rohan Shrestha
+    University ID: 2059641
+    Prototype 3
+*/
+
+/* margin and padding set to 0 to make CSS used to be browser compatible. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* light blue background */
+body{
+    background-color: lightblue;
+}
+/* setting header height and width with a shadow */
+header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); 
+}
+
+header img{
+    height: 50px;
+    margin: 15px 0 0 5%;
+    float: left;
+}
+/* styling the navbar */
+header .navbar{
+    float: right;
+    margin: 25px 5% 0 0;
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+/* styling the navbar links */
+header .navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.heading{
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+#location{
+    color: #4062bb;
+    font-size: larger;
+}
+
+.container{
+    width: 1140px;
+    font-family: "Trirong", sans-serif; 
+    margin: auto; 
+    background-color: rgba(64, 98, 187, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgb(83 89 154 / 100%); 
+    box-shadow: -2px -2px 4px 0 rgb(255 255 255 / 100%); 
+    box-shadow: 2px -2px 4px 0 rgb(0 0 0 / 20%); 
+    padding: 50px; 
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.container img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+/* styling the weather data set as grids */
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9{
+    padding: 10px 15px;
+} 
+
+.grid1, .grid4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid2, .grid5, .grid9{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.grid3, .grid6{
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.grid7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid8 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.grid9 {
+    text-align: center;
+}
+
+/* adjusting the footer section */
+footer{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 10px 0;
+}
+
+/* styling for screens of less than or equal to 1200 pixels up to 801 pixels */
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 800px;
+        padding: 30px; 
+        margin-top:25px;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    }
+
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9{
+        padding: 8px 12px;
+    } 
+
+    .grid1, .grid3, .grid5, .grid7{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .grid2, .grid4, .grid6, .grid8{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    
+    .grid9{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+/* styling for screens of 800 pixels and less */
+@media only screen and (max-width: 800px) {
+    header{
+        height: 120px; 
+        text-align: center;
+    }
+    
+    header img{
+        float: none;
+        height: 40px;
+        margin: 15px;
+    }
+    
+    header .navbar{
+        margin: 5px 0;
+        font-size: medium;
+        float: none;
+    }
+    
+    header .navbar ul li{
+        margin: 0 6px;
+    }
+    
+    .heading{
+        margin-top: 30px;
+        font-size: medium;
+    }
+
+    .container{
+        width: 300px;
+        padding: 15px; 
+        margin-top: 15px;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9{
+        padding: 8px 10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    } 
+}
